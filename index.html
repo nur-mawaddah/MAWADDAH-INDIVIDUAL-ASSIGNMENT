@@ -1,0 +1,124 @@
+<html>
+<head>
+
+<link href="ASSET/CSS/style.css" rel="stylesheet">
+
+<title> index </title>
+
+</head>
+<body>
+
+<a name="TOP_PAGE"> </a>
+
+<header1>
+  <h1> <marquee> *ੈ✩‧₊˚WELCOME TO MY PERSONAL WEBSITE*ੈ✩‧₊˚ </marquee> </h1>
+</header1> 
+
+<br><br>
+
+<center>
+<ul class="navigation">
+  <li><a href="index.html">  HOME  </a></li>
+  <li><a href="about.html">  ABOUT ME </a></li>
+  <li><a href="education.html">  EDUCATION </a></li>
+  <li><a href="hobby.html">  HOBBY </a></li>
+  <li><a href="inspiration.html">  INSPIRATION </a></li>
+  <li><a href="gallery.html">  GALLERY </a></li>
+</ul>
+</center>
+
+<br><br>
+
+<div id="clock"> 8:10:45 </div>
+<script src="clock2.js"> </script>
+
+<br><br>
+
+<center>
+<video width="720px" autoplay muted loop>
+<source src="ASSET/VIDEO/CAT.mp4" type="video/mp4">
+</video>
+</center>
+
+<br><br>
+<header2>
+  <h1> <center> 𓆩ꨄ︎𓆪 NUR MAWADDAH 𓆩ꨄ︎𓆪 </center> </h1>
+</header2>
+<br><br><br>
+
+<center> 
+
+<img src="ASSET/IMAGES/ME.jpg" width="40%">
+
+<img src="ASSET/IMAGES/ME3.jpg" width="30%">
+
+<img src="ASSET/IMAGES/ME2.jpg" width="45%">
+
+</center>
+
+<br><br>
+<header2>
+  <h1> <center> ∘°∘♡∘°∘CONTACT ME∘°∘♡∘°∘  </center> </h1>
+</header2>
+<br><br><br><br>
+
+<center>
+<a href="https://wa.me/qr/SXBGP4AOIRANM1" target="_blank"> <img src="ASSET/IMAGES/WS.png" width="100px"> </a>
+</center>
+
+<br><br>
+
+<center>
+<a href="https://instagram.com/waddagjii?igshid=ZDc4ODBmNjlmNQ==" target="_blank"> <img src="ASSET/IMAGES/INSTAGRAM.png" width="100px"> </a>
+</center>
+
+<br><br>
+
+<center>
+<a href="http://t.me/waddagjii" target="_blank"> <img src="ASSET/IMAGES/TELEGRAM.png" width="100px"> </a>
+</center>
+
+<br><br><br><br><br><br>
+
+<a href="#TOP_PAGE">
+<img src="ASSET/IMAGES/UP.png" width="35px" align="right">
+</a>
+
+<br><br><br>
+<footer>
+  <f1> COPYRIGHT @ NUR MAWADDAH </f1>
+</footer>
+
+<script>
+setInterval(showTime, 1000);
+function showTime() {
+	let time = new Date();
+	let hour = time.getHours();
+	let min = time.getMinutes();
+	let sec = time.getSeconds();
+	am_pm = "AM";
+
+	if (hour > 12) {
+		hour -= 12;
+		am_pm = "PM";
+	}
+	if (hour == 0) {
+		hr = 12;
+		am_pm = "AM";
+	}
+
+	hour = hour < 10 ? "0" + hour : hour;
+	min = min < 10 ? "0" + min : min;
+	sec = sec < 10 ? "0" + sec : sec;
+
+	let currentTime = hour + ":"
+			+ min + ":" + sec + am_pm;
+
+	document.getElementById("clock")
+			.innerHTML = currentTime;
+}
+showTime();
+</script>
+
+</body>
+</html>
